@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MyApp.Entites;
 using MyApp.Models;
 
 namespace MyApp.Data
@@ -53,7 +54,10 @@ namespace MyApp.Data
         public DbSet<Client> Clients { get; set; }
 
         public DbSet<ItemClient> ItemClients { get; set; }
-        
+        public DbSet<UserAccount> UserAccounts { get; set; }
+
+
+                
         
     }
 }

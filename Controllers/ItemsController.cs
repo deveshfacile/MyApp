@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MyApp.Data;
@@ -6,6 +7,7 @@ using MyApp.Models;
 
 namespace MyApp.Controllers
 {
+    [Authorize]
     public class ItemsController : Controller
     {
         private readonly MyAppContext _context;
